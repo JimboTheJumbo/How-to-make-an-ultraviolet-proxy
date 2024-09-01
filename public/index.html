@@ -1,30 +1,20 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <script src="/uv/uv.bundle.js"></script>
-        <script src="/uv/uv.config.js"></script>
-        <script src="/baremux/index.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dezum</title>
+    <link rel="icon" type="image/x-icon" href="dezumm.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <script>
-        if ("serviceWorker" in navigator) {
-            window.addEventListener("load", async () => {
-                await navigator.serviceWorker.register("/uv/sw.js");
-            });
-        }
-        </script>
+<div class="container">
+    <form action="https://www.google.com/search" method="get" class="search-bar">
+        <input type="text" placeholder="search anything" name="q">
+        <button type="submit"><img src="dezumm-removebg-preview.png" width="50" height="50"></button>
+    </form>
 
-        <link rel="stylesheet" href="example.css">
-    </head>
-    <body>
-        <input type="text" id="urlInput" placeholder="Enter URL here">
-        <button id="searchButton">Search Text</button>
-        <select id="switcher">
-            <option value="">--Please Choose an Option--</option>
-            <option value="epoxy">Epoxy</option>
-            <option value="bare">Bare</option>
-        </select>
-
-        <iframe id="iframeWindow" class="iframeWindow"></iframe>
-    </body>
-    <script src="example.js"></script>
+</div>
+</body>
 </html>
